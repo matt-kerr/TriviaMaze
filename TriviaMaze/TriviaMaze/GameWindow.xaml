@@ -1,0 +1,116 @@
+﻿<Window x:Name="window_game" x:Class="TriviaMaze.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Trivia Maze - Game" Height="585" Width="540" ResizeMode="CanMinimize" Closing="window_game_Closing">
+    <Canvas x:Name="canvas_main" HorizontalAlignment="Left" VerticalAlignment="Top" Height="585" Width="540" Margin="0,0,-6.4,-28.2">
+        <Canvas.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFFDF9F9" Offset="0"/>
+                <GradientStop Color="#FF4789D8" Offset="1"/>
+            </LinearGradientBrush>
+        </Canvas.Background>
+        <Grid x:Name="grid_main" Width="475" HorizontalAlignment="Left" Height="475" VerticalAlignment="Top" Margin="25,50,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Name="col0" Width="100"/>
+                <ColumnDefinition x:Name="col1" Width="25"/>
+                <ColumnDefinition x:Name="col2" Width="100"/>
+                <ColumnDefinition x:Name="col3" Width="25"/>
+                <ColumnDefinition x:Name="col4" Width="100"/>
+                <ColumnDefinition x:Name="col5" Width="25"/>
+                <ColumnDefinition x:Name="col6" Width="100"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition x:Name="row0" Height="100"/>
+                <RowDefinition x:Name="row1" Height="25"/>
+                <RowDefinition x:Name="row2" Height="100"/>
+                <RowDefinition x:Name="row3" Height="25"/>
+                <RowDefinition x:Name="row4" Height="100"/>
+                <RowDefinition x:Name="row5" Height="25"/>
+                <RowDefinition x:Name="row6" Height="100"/>
+            </Grid.RowDefinitions>
+            <Canvas x:Name="room_0_0" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="100" Margin="0" Grid.RowSpan="2" VerticalAlignment="Top" Width="100" Background="#FFBCDCFF" MouseUp="room_layout_MouseUp">
+                <Rectangle x:Name="rect_player_0_0" Fill="#FFF4F4F5" Height="50" Canvas.Left="25" Canvas.Top="25" Width="50"/>
+            </Canvas>
+            <Canvas x:Name="room_0_1" Grid.ColumnSpan="2" Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="0" VerticalAlignment="Top" Width="100" Background="#FFBCDCFF" MouseUp="room_layout_MouseUp">
+                <Rectangle x:Name="rect_player_0_1" Fill="#FFF4F4F5" Height="50" Canvas.Left="25" Canvas.Top="25" Width="50"/>
+            </Canvas>
+            <Canvas x:Name="room_0_2" Grid.Column="4" HorizontalAlignment="Left" Height="100" Margin="0" VerticalAlignment="Top" Width="100" Background="#FFBCDCFF" MouseUp="room_layout_MouseUp">
+                <Rectangle x:Name="rect_player_0_2" Fill="#FFF4F4F5" Height="50" Canvas.Left="25" Canvas.Top="25" Width="50"/>
+            </Canvas>
+            <Canvas x:Name="room_0_3" Grid.Column="6" HorizontalAlignment="Left" Height="100" Margin="0" VerticalAlignment="Top" Width="100" Background="#FFBCDCFF" MouseUp="room_layout_MouseUp">
+                <Rectangle x:Name="rect_player_0_3" Fill="#FFF4F4F5" Height="50" Canvas.Left="25" Canvas.Top="25" Width="50"/>
+            </Canvas>
+            <Canvas x:Name="room_1_0" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="2" VerticalAlignment="Top" Width="100" Background="#FFBCDCFF" MouseUp="room_layout_MouseUp">
+                <Rectangle x:Name="rect_player_1_0" Fill="#FFF4F4F5" Height="50" Canvas.Left="25" Canvas.Top="25" Width="50"/>
+            </Canvas>
+            <Canvas x:Name="room_1_1" Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="2" VerticalAlignment="Top" Width="100" Background="#FFBCDCFF" MouseUp="room_layout_MouseUp">
+                <Rectangle x:Name="rect_player_1_1" Fill="#FFF4F4F5" Height="50" Canvas.Left="25" Canvas.Top="25" Width="50"/>
+            </Canvas>
+            <Canvas x:Name="room_1_2" Grid.Column="4" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="2" VerticalAlignment="Top" Width="100" Background="#FFBCDCFF" MouseUp="room_layout_MouseUp">
+                <Rectangle x:Name="rect_player_1_2" Fill="#FFF4F4F5" Height="50" Canvas.Left="25" Canvas.Top="25" Width="50"/>
+            </Canvas>
+            <Canvas x:Name="room_1_3" Grid.Column="6" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="2" VerticalAlignment="Top" Width="100" Background="#FFBCDCFF" MouseUp="room_layout_MouseUp">
+                <Rectangle x:Name="rect_player_1_3" Fill="#FFF4F4F5" Height="50" Canvas.Left="25" Canvas.Top="25" Width="50"/>
+            </Canvas>
+            <Canvas x:Name="room_2_0" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="4" VerticalAlignment="Top" Width="100" Background="#FFBCDCFF" MouseUp="room_layout_MouseUp">
+                <Rectangle x:Name="rect_player_2_0" Fill="#FFF4F4F5" Height="50" Canvas.Left="25" Canvas.Top="25" Width="50"/>
+            </Canvas>
+            <Canvas x:Name="room_2_1" Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="4" VerticalAlignment="Top" Width="100" Background="#FFBCDCFF" MouseUp="room_layout_MouseUp">
+                <Rectangle x:Name="rect_player_2_1" Fill="#FFF4F4F5" Height="50" Canvas.Left="25" Canvas.Top="25" Width="50"/>
+            </Canvas>
+            <Canvas x:Name="room_2_2" Grid.Column="4" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="4" VerticalAlignment="Top" Width="100" Background="#FFBCDCFF" MouseUp="room_layout_MouseUp">
+                <Rectangle x:Name="rect_player_2_2" Fill="#FFF4F4F5" Height="50" Canvas.Left="25" Canvas.Top="25" Width="50"/>
+            </Canvas>
+            <Canvas x:Name="room_2_3" Grid.Column="6" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="4" VerticalAlignment="Top" Width="100" Background="#FFBCDCFF" MouseUp="room_layout_MouseUp">
+                <Rectangle x:Name="rect_player_2_3" Fill="#FFF4F4F5" Height="50" Canvas.Left="25" Canvas.Top="25" Width="50"/>
+            </Canvas>
+            <Canvas x:Name="room_3_0" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="6" VerticalAlignment="Top" Width="100" Background="#FFBCDCFF" MouseUp="room_layout_MouseUp">
+                <Rectangle x:Name="rect_player_3_0" Fill="#FFF4F4F5" Height="50" Canvas.Left="25" Canvas.Top="25" Width="50"/>
+            </Canvas>
+            <Canvas x:Name="room_3_1" Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="6" VerticalAlignment="Top" Width="100" Background="#FFBCDCFF" MouseUp="room_layout_MouseUp">
+                <Rectangle x:Name="rect_player_3_1" Fill="#FFF4F4F5" Height="50" Canvas.Left="25" Canvas.Top="25" Width="50"/>
+            </Canvas>
+            <Canvas x:Name="room_3_2" Grid.Column="4" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="6" VerticalAlignment="Top" Width="100" Background="#FFBCDCFF" MouseUp="room_layout_MouseUp">
+                <Rectangle x:Name="rect_player_3_2" Fill="#FFF4F4F5" Height="50" Canvas.Left="25" Canvas.Top="25" Width="50"/>
+            </Canvas>
+            <Canvas x:Name="room_3_3" Grid.Column="6" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="6" VerticalAlignment="Top" Width="100" Background="#FF92FD9F" MouseUp="room_layout_MouseUp">
+                <Rectangle x:Name="rect_player_3_3" Fill="#FFF4F4F5" Height="50" Canvas.Left="25" Canvas.Top="25" Width="50"/>
+            </Canvas>
+            <Canvas x:Name="lock_vert_0_0" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="0" VerticalAlignment="Top" Width="25" Background="#FFB89E9F" MouseUp="lock_vert_MouseUp"/>
+            <Canvas x:Name="lock_vert_0_1" Grid.Column="3" HorizontalAlignment="Left" Height="100" Margin="0" VerticalAlignment="Top" Width="25" Background="#FFB89E9F" MouseUp="lock_vert_MouseUp"/>
+            <Canvas x:Name="lock_vert_0_2" Grid.Column="5" HorizontalAlignment="Left" Height="100" Margin="0" VerticalAlignment="Top" Width="25" Background="#FFB89E9F" MouseUp="lock_vert_MouseUp"/>
+            <Canvas x:Name="lock_vert_1_0" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="2" VerticalAlignment="Top" Width="25" Background="#FFB89E9F" MouseUp="lock_vert_MouseUp"/>
+            <Canvas x:Name="lock_vert_1_1" Grid.Column="3" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="2" VerticalAlignment="Top" Width="25" Background="#FFB89E9F" MouseUp="lock_vert_MouseUp"/>
+            <Canvas x:Name="lock_vert_1_2" Grid.Column="5" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="2" VerticalAlignment="Top" Width="25" Background="#FFB89E9F" MouseUp="lock_vert_MouseUp"/>
+            <Canvas x:Name="lock_vert_2_0" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="4" VerticalAlignment="Top" Width="26" Background="#FFB89E9F" Grid.Column="1" MouseUp="lock_vert_MouseUp"/>
+            <Canvas x:Name="lock_vert_2_1" Grid.Column="3" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="4" VerticalAlignment="Top" Width="25" Background="#FFB89E9F" MouseUp="lock_vert_MouseUp"/>
+            <Canvas x:Name="lock_vert_2_2" Grid.Column="5" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="4" VerticalAlignment="Top" Width="25" Background="#FFB89E9F" MouseUp="lock_vert_MouseUp"/>
+            <Canvas x:Name="lock_vert_3_0" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="6" VerticalAlignment="Top" Width="25" Background="#FFB89E9F" MouseUp="lock_vert_MouseUp"/>
+            <Canvas x:Name="lock_vert_3_1" Grid.Column="3" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="6" VerticalAlignment="Top" Width="25" Background="#FFB89E9F" MouseUp="lock_vert_MouseUp"/>
+            <Canvas x:Name="lock_vert_3_2" Grid.Column="5" HorizontalAlignment="Left" Height="100" Margin="0" Grid.Row="6" VerticalAlignment="Top" Width="25" Background="#FFB89E9F" MouseUp="lock_vert_MouseUp"/>
+            <Canvas x:Name="lock_horiz_0_0" HorizontalAlignment="Left" Height="25" Margin="0" VerticalAlignment="Top" Width="100" Background="#FFB89E9F" Grid.Row="1" MouseUp="lock_horiz_MouseUp"/>
+            <Canvas x:Name="lock_horiz_0_1" Grid.Column="2" HorizontalAlignment="Left" Height="25" Margin="0" VerticalAlignment="Top" Width="100" Background="#FFB89E9F" Grid.Row="1" MouseUp="lock_horiz_MouseUp"/>
+            <Canvas x:Name="lock_horiz_0_2" Grid.Column="4" HorizontalAlignment="Left" Height="25" Margin="0" VerticalAlignment="Top" Width="100" Background="#FFB89E9F" Grid.Row="1" MouseUp="lock_horiz_MouseUp"/>
+            <Canvas x:Name="lock_horiz_0_3" Grid.Column="6" HorizontalAlignment="Left" Height="25" Margin="0" Grid.Row="1" VerticalAlignment="Top" Width="100" Background="#FFB89E9F" MouseUp="lock_horiz_MouseUp"/>
+            <Canvas x:Name="lock_horiz_1_0" HorizontalAlignment="Left" Height="24" Margin="0" Grid.Row="3" VerticalAlignment="Top" Width="100" Background="#FFB89E9F" MouseUp="lock_horiz_MouseUp"/>
+            <Canvas x:Name="lock_horiz_1_1" Grid.Column="2" HorizontalAlignment="Left" Height="25" Margin="0" Grid.Row="3" VerticalAlignment="Top" Width="100" Background="#FFB89E9F" MouseUp="lock_horiz_MouseUp"/>
+            <Canvas x:Name="lock_horiz_1_2" Grid.Column="4" HorizontalAlignment="Left" Height="25" Margin="0" Grid.Row="3" VerticalAlignment="Top" Width="100" Background="#FFB89E9F" MouseUp="lock_horiz_MouseUp"/>
+            <Canvas x:Name="lock_horiz_1_3" Grid.Column="6" HorizontalAlignment="Left" Height="25" Margin="0" Grid.Row="3" VerticalAlignment="Top" Width="100" Background="#FFB89E9F" MouseUp="lock_horiz_MouseUp"/>
+            <Canvas x:Name="lock_horiz_2_0" HorizontalAlignment="Left" Height="25" Margin="0" Grid.Row="5" VerticalAlignment="Top" Width="100" Background="#FFB89E9F" MouseUp="lock_horiz_MouseUp"/>
+            <Canvas x:Name="lock_horiz_2_1" Grid.Column="2" HorizontalAlignment="Left" Height="25" Margin="0" Grid.Row="5" VerticalAlignment="Top" Width="100" Background="#FFB89E9F" MouseUp="lock_horiz_MouseUp"/>
+            <Canvas x:Name="lock_horiz_2_2" Grid.Column="4" HorizontalAlignment="Left" Height="25" Margin="0" Grid.Row="5" VerticalAlignment="Top" Width="100" Background="#FFB89E9F" MouseUp="lock_horiz_MouseUp"/>
+            <Canvas x:Name="lock_horiz_2_3" Grid.Column="6" HorizontalAlignment="Left" Height="25" Margin="0" Grid.Row="5" VerticalAlignment="Top" Width="100" Background="#FFB89E9F" MouseUp="lock_horiz_MouseUp"/>
+        </Grid>
+        <Menu x:Name="mnu_main" Height="25" Width="540">
+            <MenuItem x:Name="mnu_file" Header="File">
+                <MenuItem x:Name="mnu_loadGame" Header="Load Game" Click="mnu_loadGame_Click"/>
+                <MenuItem x:Name="mnu_saveGame" Header="Save Game" Click="mnu_saveGame_Click"/>
+                <MenuItem x:Name="mnu_exit" Header="Exit" Click="mnu_exit_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="mnu_help" Header="Help">
+                <MenuItem x:Name="mnu_howToPlay" Header="How to Play" Click="mnu_howToPlay_Click"/>
+                <MenuItem x:Name="mnu_about" Header="About" Click="mnu_about_Click"/>
+            </MenuItem>
+        </Menu>
+    </Canvas>
+</Window>

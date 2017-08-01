@@ -1,0 +1,31 @@
+﻿<Window x:Name="Instruction" x:Class="TriviaMaze.InstructionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="InstructionWindow" Height="581" Width="540">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="267*"/>
+            <ColumnDefinition Width="265*"/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="instruction_grid" HorizontalAlignment="Right" Height="551" VerticalAlignment="Top" Width="532" Grid.ColumnSpan="2">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF9F5F5" Offset="0"/>
+                    <GradientStop Color="#FF4789D8" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Image x:Name="icon_one" HorizontalAlignment="Left" Height="456" Margin="35,10,0,0" VerticalAlignment="Top" Width="457" Source="pack://siteoforigin:,,,/Resources/one.png"/>
+            <Button x:Name="button_continue" Content="Continue" HorizontalAlignment="Left" Margin="90,488,0,0" VerticalAlignment="Top" Width="111" Height="37" Click="button_continue_Click"/>
+            <Button x:Name="button_return" Content="Return" HorizontalAlignment="Left" Margin="331,488,0,0" VerticalAlignment="Top" Width="111" Height="37" Click="button_return_Click"/>
+            <Image x:Name="icon_two" HorizontalAlignment="Left" Height="456" Margin="35,10,0,0" VerticalAlignment="Top" Width="457" Source="pack://siteoforigin:,,,/Resources/two.fw.png"/>
+            <Image x:Name="icon_three" HorizontalAlignment="Left" Height="456" Margin="48,10,0,0" VerticalAlignment="Top" Width="457" Source="pack://siteoforigin:,,,/Resources/three.png"/>
+            <Image x:Name="icon_four" HorizontalAlignment="Left" Height="456" Margin="48,10,0,0" VerticalAlignment="Top" Width="457" Source="pack://siteoforigin:,,,/Resources/four.png"/>
+            <Image x:Name="icon_five" HorizontalAlignment="Left" Height="456" Margin="48,10,0,0" VerticalAlignment="Top" Width="484" Source="pack://siteoforigin:,,,/Resources/five.png"/>
+            <Image x:Name="icon_six" HorizontalAlignment="Left" Height="456" Margin="35,10,0,0" VerticalAlignment="Top" Width="457" Source="pack://siteoforigin:,,,/Resources/six.png"/>
+            <Image x:Name="icon_seven" HorizontalAlignment="Left" Height="456" Margin="35,10,0,0" VerticalAlignment="Top" Width="457" Source="pack://siteoforigin:,,,/Resources/eight.fw.png"/>
+            <Image x:Name="icon_eight" HorizontalAlignment="Left" Height="456" Margin="35,10,0,0" VerticalAlignment="Top" Width="457" Source="pack://siteoforigin:,,,/Resources/nine.png"/>
+            <Image x:Name="icon_nine" HorizontalAlignment="Left" Height="456" Margin="35,10,0,0" VerticalAlignment="Top" Width="457" Source="pack://siteoforigin:,,,/Resources/ten.png"/>
+        </Grid>
+
+    </Grid>
+</Window>

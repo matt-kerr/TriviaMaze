@@ -1,0 +1,40 @@
+﻿<Window x:Name="window_main" x:Class="TriviaMaze.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Trivia Maze - Main Menu" Height="300" Width="300" ResizeMode="CanMinimize">
+    <Canvas x:Name="canvas_main" HorizontalAlignment="Left" Height="290" VerticalAlignment="Top" Width="300" Margin="0,0,-6.4,-18">
+        <Canvas.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFF8F9FB" Offset="0"/>
+                <GradientStop Color="#FF4789D8" Offset="1"/>
+            </LinearGradientBrush>
+        </Canvas.Background>
+        <Image x:Name="icon_entertainment" Height="62" Canvas.Left="25" Canvas.Top="92" Width="57" Source="pack://siteoforigin:,,,/Resources/entertainment.png"/>
+        <Image x:Name="icon_sports_Copy" Height="62" Canvas.Left="191" Canvas.Top="101" Width="64" Source="pack://siteoforigin:,,,/Resources/sports.png" RenderTransformOrigin="1.203,-1.048"/>
+        <Image x:Name="icon_entertainment_Copy1" Height="62" Canvas.Left="233" Canvas.Top="156" Width="57" Source="pack://siteoforigin:,,,/Resources/entertainment.png"/>
+        <Image x:Name="icon_science_Copy" Height="65" Canvas.Left="224" Canvas.Top="30" Width="66" Source="pack://siteoforigin:,,,/Resources/science.png"/>
+        <Image x:Name="icon_science" Height="65" Canvas.Left="61" Canvas.Top="198" Width="66" Source="pack://siteoforigin:,,,/Resources/science.png"/>
+        <Button x:Name="btn_startGame" Content="Start Game" Canvas.Left="73" Canvas.Top="113" Width="150" Click="btn_startGame_Click" Height="50"/>
+        <Label x:Name="lbl_mainMenuHeader" Content="Trivia Maze" Canvas.Left="83" Canvas.Top="50" FontSize="24"/>
+        <Menu x:Name="mnu_main" Height="25" Width="300">
+            <MenuItem x:Name="mnu_file" Header="File">
+                <MenuItem x:Name="mnu_exit" Header="Exit" Click="mnu_exit_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="mnu_game" Header="Game">
+                <MenuItem x:Name="mnu_startGame" Header="Start Game" Click="mnu_startGame_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="mnu_admin" Header="Admin">
+                <MenuItem x:Name="mnu_adminTools" Header="Admin Tools" Click="mnu_adminTools_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="mnu_help" Header="Help">
+                <MenuItem x:Name="mnu_howToPlay" Header="How To Play" Click="mnu_howToPlay_Click"/>
+                <MenuItem x:Name="mnu_about" Header="About" Click="mnu_about_Click"/>
+            </MenuItem>
+        </Menu>
+        <Button x:Name="btn_adminTools" Content="Admin Tools" Canvas.Left="73" Canvas.Top="198" Width="150" Height="25" Click="btn_adminTools_Click"/>
+        <Button x:Name="btn_howToPlay" Content="How To Play" Canvas.Left="73" Canvas.Top="168" Width="150" Height="25" Click="btn_howToPlay_Click"/>
+        <Image x:Name="icon_sports" Height="62" Canvas.Left="-25" Canvas.Top="168" Width="64" Source="pack://siteoforigin:,,,/Resources/sports.png"/>
+        <Image x:Name="icon_history_Copy" Height="70" Canvas.Left="205" Canvas.Top="223" Width="65" Source="pack://siteoforigin:,,,/Resources/history.png"/>
+        <Image x:Name="icon_history_Copy1" Height="70" Canvas.Left="-9" Canvas.Top="22" Width="65" Source="pack://siteoforigin:,,,/Resources/history.png"/>
+    </Canvas>
+</Window>

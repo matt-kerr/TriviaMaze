@@ -1,0 +1,38 @@
+﻿<Window x:Class="TriviaMaze.QuestionsQueryandRemoval"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Questions: Query and Removal" Height="550" Width="725">
+    <Grid>
+        <DockPanel>
+            <Menu x:Name="mnu_main" DockPanel.Dock="Top" VerticalAlignment="Top">
+                <MenuItem x:Name="mnu_file" Header="_File">
+                    <MenuItem x:Name="mnu_exit" Header="E_xit Query And Removal" Click="mnu_exit_Click"/>
+                </MenuItem>
+                <MenuItem x:Name="mnu_help" Header="Help">
+                    <MenuItem x:Name="mnu_about" Header="About" Click="mnu_about_Click"/>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+        <DataGrid x:Name="QueryDataGrid" HorizontalAlignment="Left" Height="354" Margin="35,100,0,0" VerticalAlignment="Top" Width="650" AutoGenerateColumns="True"/>
+        <ComboBox x:Name="CatagoryToQuery" HorizontalAlignment="Left" Height="30" Margin="284,55,0,0" VerticalAlignment="Top" Width="150" AllowDrop="True" IsReadOnly="True" SelectedIndex="0">
+            <ComboBoxItem x:Name="Entertainment" Content="Entertainment"/>
+            <ComboBoxItem x:Name="History" Content="History"/>
+            <ComboBoxItem x:Name="Science" Content="Science"/>
+            <ComboBoxItem x:Name="Sports" Content="Sports"/>
+        </ComboBox>
+        <ComboBox x:Name="QuestionTypeToQuery" HorizontalAlignment="Left" Height="30" Margin="35,55,0,0" VerticalAlignment="Top" Width="150" AllowDrop="True" IsReadOnly="True" SelectedIndex="0">
+            <ComboBoxItem x:Name="TrueFalse" Content="True/False"/>
+            <ComboBoxItem x:Name="MultipleChoice" Content="Multiple Choice"/>
+            <ComboBoxItem x:Name="ShortAnswer" Content="Short Answer"/>
+        </ComboBox>
+        <TextBox x:Name="NumberToRemove" HorizontalAlignment="Left" Height="30" Margin="582,55,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="70"/>
+        <Button x:Name="QueryButton" Content="Query" HorizontalAlignment="Left" Margin="35,465,0,0" VerticalAlignment="Top" Width="125" Height="45" Click="QueryButton_Click"/>
+        <Button x:Name="RemoveButton" Content="Remove" HorizontalAlignment="Left" Margin="560,465,0,0" VerticalAlignment="Top" Width="125" Height="45" Click="RemoveButton_Click"/>
+        <Label x:Name="RemoveLabel" Content="Item to Remove/Edit ID #: " HorizontalAlignment="Left" Margin="498,24,0,0" VerticalAlignment="Top" Width="154"/>
+        <Label x:Name="QuestionType" Content="Select Question Type:" HorizontalAlignment="Left" Margin="35,24,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="SelectQuestionCategory" Content="Select Question Category:" HorizontalAlignment="Left" Margin="284,24,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.244,-0.392"/>
+        <Button x:Name="EditButton" Content="Edit" HorizontalAlignment="Left" Margin="306,465,0,0" VerticalAlignment="Top" Width="125" Height="45" Click="EditButton_Click"/>
+
+    </Grid>
+</Window>
+

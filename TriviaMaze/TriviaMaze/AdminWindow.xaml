@@ -1,0 +1,9 @@
+﻿<Window x:Name="window_admin" x:Class="TriviaMaze.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Trivia Maze - Admin Tools" Height="300" Width="300" Closing="window_admin_Closing">
+    <Canvas HorizontalAlignment="Left" Height="290" VerticalAlignment="Top" Width="300" Margin="0,0,-6.4,-18">
+        <Button x:Name="EnterQuestion" Content="Enter Question" Height="75" Canvas.Left="60" Canvas.Top="65" Width="175" Click="EnterQuestion_Click"/>
+        <Button x:Name="QueryQuestions" Content="Query/Remove Question" Height="75" Canvas.Left="60" Canvas.Top="145" Width="175" Click="QueryQuestions_Click"/>
+    </Canvas>
+</Window>
